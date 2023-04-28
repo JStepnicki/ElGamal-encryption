@@ -31,17 +31,11 @@ public class ElGamal {
 
     public BigInteger[] sign(byte[] document) {
         messageDigest.update(document);
-        BigInteger signature = new BigInteger(1, messageDigest.digest());
+        BigInteger DocumentHash = new BigInteger(1, messageDigest.digest());
         r = new BigInteger(keyLength, random);
         BigInteger s1 = g.modPow(r, p);// (g^r)%p tylko na BigIntach
-        while (true) {
-            if (r.gcd(pSubstractOne).equals(BigInteger.ONE))//sprawdzamy czy NWD(r,p-1) = 1 jezlie nie losujemy inne r
-                break;
-            else
-                r = r.nextProbablePrime();
-        }
         rPrim = r.modInverse(pSubstractOne);//(r^-1)%(p-1) ;D
-        BigInteger temp = signature.subtract((a.multiply(s1)));// signature - a * s1
+        BigInteger temp = DocumentHash.subtract((a.multiply(s1)));// DocumentHash - a * s1
         BigInteger s2 = temp.multiply(rPrim.mod(pSubstractOne)); // temp * rPrim%(p-1)
         BigInteger[] result = new BigInteger[2];
         result[0] = s1;
@@ -51,9 +45,9 @@ public class ElGamal {
 
     public boolean verify(byte[] document, BigInteger[] signature) {
         messageDigest.update(document);
-        BigInteger hash = new BigInteger(1, messageDigest.digest());
-        BigInteger result1 = g.modPow(hash, p);
-        BigInteger result2 = h.modPow(signature[0], p).multiply(signature[0].modPow(signature[1], p)).mod(p);
+        BigInteger DocumentHash = new BigInteger(1, messageDigest.digest());
+        BigInteger result1 = g.modPow(DocumentHash, p); // g^hash %p
+        BigInteger result2 = h.modPow(signature[0], p).multiply(signature[0].modPow(signature[1], p)).mod(p); //h^s1 * s1^s2 %p
         return result1.compareTo(result2) == 0;
     }
 
