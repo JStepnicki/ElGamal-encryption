@@ -1,3 +1,5 @@
+package org.example.model;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
