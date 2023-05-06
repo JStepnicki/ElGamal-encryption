@@ -1,1 +1,1 @@
-# ElGamal-encryption
+# org.example.model.ElGamal-encryption
