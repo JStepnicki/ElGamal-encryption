@@ -14,7 +14,7 @@ public class ElGamal {
     BigInteger h; // public keys
     BigInteger a; // private key
     BigInteger rPrim;
-    BigInteger pSubstractOne;
+    BigInteger pSubstrateOne;
     private final int keyLength = 2048;
     private final MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
     private final Random random = new SecureRandom();
@@ -27,7 +27,7 @@ public class ElGamal {
         g = new BigInteger(keyLength, random);
         a = new BigInteger(keyLength, random); // to będzie klucz prywatny
         h = g.modPow(a, N); // (g^a)%N tylko na BigIntach
-        pSubstractOne = N.subtract(BigInteger.ONE);
+        pSubstrateOne = N.subtract(BigInteger.ONE);
     }
 
 
@@ -36,8 +36,8 @@ public class ElGamal {
         BigInteger DocumentHash = new BigInteger(1, messageDigest.digest());
         r = BigInteger.probablePrime(keyLength, random);
         BigInteger s1 = g.modPow(r, N);// (g^r)%p tylko na BigIntach
-        rPrim = r.modInverse(pSubstractOne);//(r^-1)%(N-1) ;D
-        BigInteger s2 = DocumentHash.subtract(a.multiply(s1)).multiply(rPrim).mod(pSubstractOne);
+        rPrim = r.modInverse(pSubstrateOne);//(r^-1)%(N-1) ;D
+        BigInteger s2 = DocumentHash.subtract(a.multiply(s1)).multiply(rPrim).mod(pSubstrateOne);
         BigInteger[] result = new BigInteger[2];
         result[0] = s1;
         result[1] = s2;
