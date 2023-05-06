@@ -53,5 +53,27 @@ public class ElGamal {
         return result1.compareTo(result2) == 0;
     }
 
+    public BigInteger getP() {
+        return p;
+    }
 
+    public BigInteger getG() {
+        return g;
+    }
+
+    public BigInteger getR() {
+        return r;
+    }
+
+    public BigInteger getH() {
+        return h;
+    }
+
+    public BigInteger getA() {
+        return a;
+    }
+
+    public BigInteger getrPrim() {
+        return rPrim;
+    }
 }
