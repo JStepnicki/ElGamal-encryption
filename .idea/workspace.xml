@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44096243-1edd-40a6-86e7-2af311aefc47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_10_extended.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/org/example/model/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElGamal-encryption.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ElGamal-encryption.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +50,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jstep/Desktop/Nowy folder&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.43678162&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
@@ -58,6 +70,37 @@
       <recent name="" />
       <recent name="com.example.view" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.test">
+    <configuration name="All in model" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="model" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="model" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.model" />
+      <option name="MAIN_CLASS_NAME" value="org.example.model.test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test" />
+        <item itemvalue="JUnit.All in model" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
