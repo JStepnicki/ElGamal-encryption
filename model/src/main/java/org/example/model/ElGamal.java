@@ -23,9 +23,16 @@ public class ElGamal {
     }
 
     public void generateKeys() {
-        N = BigInteger.probablePrime(keyLength + 1, random);
+        N = BigInteger.probablePrime(keyLength, random);
         g = new BigInteger(keyLength, random);
+        do {
+            g = new BigInteger(keyLength, random);
+        } while(g.compareTo(N) >= 0);
         a = new BigInteger(keyLength, random); // to będzie klucz prywatny
+        do {
+            a = new BigInteger(keyLength, random);
+        } while(a.compareTo(N) >= 0);
+
         h = g.modPow(a, N); // (g^a)%N tylko na BigIntach
         pSubstrateOne = N.subtract(BigInteger.ONE);
     }
