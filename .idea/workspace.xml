@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44096243-1edd-40a6-86e7-2af311aefc47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_10_extended.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/org/example/model/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_10_extended.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElGamal-encryption.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ElGamal-encryption.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/java/com/example/view/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/com/example/view/ApplicationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="com.example.view" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test">
+  <component name="RunManager">
     <configuration name="All in model" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="model" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test" />
         <item itemvalue="JUnit.All in model" />
+        <item itemvalue="JUnit.test" />
       </list>
     </recent_temporary>
   </component>

@@ -126,11 +126,9 @@ public class ApplicationController extends Window {
                 fileChooser.setTitle("Save signature to file");
                 File signFile = fileChooser.showSaveDialog(this);
                 try (FileWriter fos = new FileWriter(signFile, true)) {
-                    fos.write(signNumbers[0].toString(16));
-                    fos.write('\n');
-                    fos.write(signNumbers[1].toString(16));
+                    fos.write(signNumbers[0].toString(16)+"\n");
+                    fos.write(signNumbers[1].toString(16)+"\n");
                 }
-
             }
         } catch (NullPointerException | IOException e) {
             Alert alert = new Alert(Alert.AlertType.NONE, "No file selected!", ButtonType.OK);
@@ -152,11 +150,16 @@ public class ApplicationController extends Window {
                 File signedFile = fileChooser.showOpenDialog(this);
                 fileChooser.setTitle("Select file with signature");
                 File fileWithSign = fileChooser.showOpenDialog(this);
-                BigInteger[] signature = Arrays.stream(new String(Files.readAllBytes(fileWithSign.toPath()))
-                                .split("\n"))
-                        .map(Utils::hexToBytes)
-                        .map(BigInteger::new)
-                        .toArray(BigInteger[]::new);
+                BigInteger[] signature = new BigInteger[2];
+                try (Scanner scanner = new Scanner(fileWithSign)) {
+                    String firstline = scanner.nextLine();
+                    String secondline = scanner.nextLine();
+                    signature[0]  = new BigInteger(firstline,16);
+                    signature[1] = new BigInteger(secondline,16);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
                 if (elgamal.verify(Files.readAllBytes(signedFile.getAbsoluteFile().toPath()), signature)) {
                     Alert alert = new Alert(Alert.AlertType.NONE, "Verified correctly", ButtonType.OK);
                     alert.setTitle("Verification");
