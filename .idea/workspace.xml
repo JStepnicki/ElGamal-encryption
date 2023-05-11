@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44096243-1edd-40a6-86e7-2af311aefc47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_10_extended.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElGamal-encryption.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ElGamal-encryption.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/org/example/model/ElGamal.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/org/example/model/ElGamal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/classpath.index" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/view/src/main/java/com/example/view/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/com/example/view/ApplicationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +29,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2POEtPrlRRWSyl7edJFAkiwNp1C" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,6 +46,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jstep/Desktop/Nowy folder&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
@@ -109,8 +100,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683319944212</updated>
+      <workItem from="1683793167826" duration="119000" />
+      <workItem from="1683793580018" duration="1673000" />
+      <workItem from="1683814035871" duration="693000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

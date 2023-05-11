@@ -41,7 +41,7 @@ public class ApplicationController extends Window {
         elgamal.generateKeys();
         keyG.setText(elgamal.getG().toString(16));
         keyH.setText(elgamal.getH().toString(16));
-        modN.setText(elgamal.getN().toString(16));
+        modN.setText(elgamal.getP().toString(16));
         keyA.setText(elgamal.getA().toString(16));
 
     }
@@ -61,11 +61,11 @@ public class ApplicationController extends Window {
             BigInteger a = new BigInteger(aLine,16);
             elgamal.setG(g);
             elgamal.setH(h);
-            elgamal.setN(n);
+            elgamal.setP(n);
             elgamal.setA(a);
             keyG.setText(elgamal.getG().toString(16));
             keyH.setText(elgamal.getH().toString(16));
-            modN.setText(elgamal.getN().toString(16));
+            modN.setText(elgamal.getP().toString(16));
             keyA.setText(elgamal.getA().toString(16));
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -79,7 +79,7 @@ public class ApplicationController extends Window {
         try (FileWriter fos = new FileWriter(signFile, true)) {
             fos.write(elgamal.getG().toString(16) + "\n");
             fos.write(elgamal.getH().toString(16) + "\n");
-            fos.write(elgamal.getN().toString(16) + "\n");
+            fos.write(elgamal.getP().toString(16) + "\n");
             fos.write(elgamal.getA().toString(16) + "\n");
         } catch (IOException e) {
             throw new RuntimeException(e);
