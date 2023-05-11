@@ -26,8 +26,8 @@
         </rowConstraints>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key g" wrappingWidth="138.13672351837158" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key h" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key a" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MOD N" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Private Key a" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Public key p" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <TextField fx:id="keyA" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <TextField fx:id="keyG" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
       <TextField fx:id="keyH" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />

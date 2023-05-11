@@ -8,9 +8,9 @@ import java.util.Random;
 
 public class ElGamal {
 
-    BigInteger p;
+    BigInteger p; // public keys
     BigInteger g; // public keys
-    BigInteger r; // public keys
+    BigInteger r;
     BigInteger h; // public keys
     BigInteger a; // private key
     BigInteger rPrim;

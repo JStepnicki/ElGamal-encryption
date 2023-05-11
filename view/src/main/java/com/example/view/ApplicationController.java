@@ -53,15 +53,15 @@ public class ApplicationController extends Window {
         try (Scanner scanner = new Scanner(signFile)) {
             String gLine = scanner.nextLine();
             String hLine = scanner.nextLine();
-            String nLine = scanner.nextLine();
+            String pLine = scanner.nextLine();
             String aLine = scanner.nextLine();
             BigInteger g = new BigInteger(gLine,16);
             BigInteger h = new BigInteger(hLine,16);
-            BigInteger n = new BigInteger(nLine,16);
+            BigInteger p = new BigInteger(pLine,16);
             BigInteger a = new BigInteger(aLine,16);
             elgamal.setG(g);
             elgamal.setH(h);
-            elgamal.setP(n);
+            elgamal.setP(p);
             elgamal.setA(a);
             keyG.setText(elgamal.getG().toString(16));
             keyH.setText(elgamal.getH().toString(16));
