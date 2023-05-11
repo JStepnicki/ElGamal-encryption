@@ -125,7 +125,7 @@ public class ApplicationController extends Window {
                 BigInteger[] signNumbers = elgamal.sign(Files.readAllBytes(fileToSign.getAbsoluteFile().toPath()));
                 fileChooser.setTitle("Save signature to file");
                 File signFile = fileChooser.showSaveDialog(this);
-                try (FileWriter fos = new FileWriter(signFile, true)) {
+                try (FileWriter fos = new FileWriter(signFile, false)) {
                     fos.write(signNumbers[0].toString(16)+"\n");
                     fos.write(signNumbers[1].toString(16)+"\n");
                 }

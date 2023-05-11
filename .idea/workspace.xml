@@ -7,7 +7,7 @@
     <list default="true" id="44096243-1edd-40a6-86e7-2af311aefc47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/src/main/java/org/example/model/ElGamal.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/org/example/model/ElGamal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/java/com/example/view/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/com/example/view/ApplicationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.43678162&quot;,
@@ -104,7 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683319944212</updated>
       <workItem from="1683761310556" duration="1723000" />
-      <workItem from="1683763776248" duration="3275000" />
+      <workItem from="1683763776248" duration="3320000" />
+      <workItem from="1683793210651" duration="2051000" />
     </task>
     <servers />
   </component>
