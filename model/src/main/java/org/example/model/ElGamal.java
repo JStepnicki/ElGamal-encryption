@@ -34,12 +34,14 @@ public class ElGamal {
     public BigInteger[] sign(byte[] document) {
         messageDigest.update(document);
         BigInteger DocumentHash = new BigInteger(1, messageDigest.digest());
-        r = BigInteger.probablePrime(keyLength, random);
+        do{
+            r = BigInteger.probablePrime(keyLength, random);
+        } while (!r.gcd(pSubstrateOne).equals(BigInteger.ONE));
         BigInteger s1 = g.modPow(r, N);// (g^r)%p tylko na BigIntach
         rPrim = r.modInverse(pSubstrateOne);//(r^-1)%(N-1) ;D
         BigInteger s2 = DocumentHash.subtract(a.multiply(s1)).multiply(rPrim).mod(pSubstrateOne);
         BigInteger[] result = new BigInteger[2];
-        result[0] = s1;
+        result[0] = s1; 
         result[1] = s2;
         return result;
     }
