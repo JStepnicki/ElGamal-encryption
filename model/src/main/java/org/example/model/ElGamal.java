@@ -24,6 +24,10 @@ public class ElGamal {
 
     public void generateKeys() {
         p = BigInteger.probablePrime(keyLength, random);
+        while(!p.isProbablePrime(1)){
+            p = BigInteger.probablePrime(keyLength, random);
+        }
+
         g = new BigInteger(keyLength, random);
         do {
             g = new BigInteger(keyLength, random);
